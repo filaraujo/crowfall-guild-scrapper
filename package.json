@@ -5,6 +5,11 @@
   "author": "Filipe Araujo",
   "license": "MIT",
   "dependencies": {
+    "@std/esm": "^0.13.0",
+    "minimist": "^1.2.0",
     "puppeteer": "^0.13.0"
+  },
+  "scripts": {
+    "start": "node -r @std/esm index.js"
   }
 }

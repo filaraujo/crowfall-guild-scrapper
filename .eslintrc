@@ -1,0 +1,37 @@
+{
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": "eslint-config-google",
+    "globals": {
+      "Polymer": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    },
+    "rules": {
+      "arrow-parens": ["error", "as-needed"],
+      "comma-dangle": ["error", "never"],
+      "indent": ["error", 2, {"VariableDeclarator": 2, "SwitchCase": 1}],
+      "max-len": ["error", {
+        "code": 100,
+        "ignoreComments": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true
+      }],
+      "no-console": ["warn", { "allow": ["warn", "info", "time", "timeEnd"] }],
+      "no-debugger": ["error"],
+      "no-else-return": ["error"],
+      "no-multiple-empty-lines": ["error", {"max": 1}],
+      "no-undef": ["error"],
+      "object-curly-spacing": ["error", "always"],
+      "require-jsdoc": ["off"],
+      "quote-props": ["error", "as-needed"],
+      "valid-jsdoc": ["off"]
+    }
+  }
+  
